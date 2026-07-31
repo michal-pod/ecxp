@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Tahoma", "MS Sans Serif", Arial, sans-serif;
+  color: #111;
+  user-select: none;
+}
+
+input,
+button {
+  font-family: inherit;
+}

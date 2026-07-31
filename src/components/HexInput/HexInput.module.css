@@ -1,0 +1,17 @@
+.field {
+  justify-content: space-between;
+  margin-top: auto;
+  font-size: 11px;
+}
+
+.field label {
+  min-width: 64px;
+}
+
+.input {
+  width: 52px;
+  height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Console", Consolas, monospace;
+}

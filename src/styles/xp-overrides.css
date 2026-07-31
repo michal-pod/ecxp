@@ -1,0 +1,18 @@
+.window {
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.title-bar {
+  min-height: 28px;
+}
+
+.title-bar-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.window-body {
+  margin: 8px;
+}

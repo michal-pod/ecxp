@@ -1,0 +1,45 @@
+.rnd {
+  position: absolute;
+}
+
+.window {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.titleBar {
+  flex: 0 0 auto;
+}
+
+.inactive .titleBar {
+  background: linear-gradient(90deg, #6c89c8, #9db8ec);
+}
+
+.titleIcon {
+  display: inline-grid;
+  width: 16px;
+  height: 16px;
+  place-items: center;
+  border-radius: 2px;
+  font-size: 10px;
+  background: linear-gradient(#e7f6ff, #236eb8 52%, #143a82);
+}
+
+.titleText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.titleButtons {
+  flex: 0 0 auto;
+}
+
+.body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: #ece9d8;
+}

@@ -1,0 +1,69 @@
+.icon {
+  width: 92px;
+  padding: 4px;
+  border: 1px solid transparent;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+  background: transparent;
+  cursor: default;
+}
+
+.icon:focus,
+.icon:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(49, 103, 197, 0.42);
+  outline: none;
+}
+
+.glyph {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 4px;
+  place-items: center;
+  border: 1px solid #0a3b66;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 24px;
+  background: linear-gradient(145deg, #d8efff, #2269ac 46%, #092f7d);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.resistor {
+  color: #23170b;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(145deg, #f5d48a, #c08337 50%, #7f4d1d);
+}
+
+.chip {
+  color: #fff;
+}
+
+.e-series {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(145deg, #d8f0ff, #4d87c8 50%, #173b87);
+}
+
+.divider {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(145deg, #edf7ff, #4c8a6c 50%, #245035);
+}
+
+.about {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(145deg, #fff8c9, #d6a33a 50%, #8b631d);
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  line-height: 1.2;
+}

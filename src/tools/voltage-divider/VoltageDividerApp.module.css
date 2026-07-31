@@ -1,0 +1,132 @@
+.app {
+  display: grid;
+  height: 100%;
+  gap: 4px;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.main {
+  display: grid;
+  min-height: 0;
+  gap: 5px;
+  grid-template-columns: 260px minmax(0, 1fr);
+}
+
+.form {
+  display: grid;
+  gap: 4px;
+}
+
+.valueRow {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 56px;
+  gap: 4px;
+  align-items: center;
+}
+
+.valueRow input {
+  width: 100%;
+}
+
+.valueRow select {
+  width: 56px;
+}
+
+.unitText {
+  font-size: 11px;
+}
+
+.readOnlyInput {
+  color: #444;
+  background: #f1f1ee;
+}
+
+.selectStack {
+  display: grid;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.selectRow {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 56px;
+  gap: 4px;
+  align-items: center;
+}
+
+.selectRow label {
+  min-width: 0;
+}
+
+.selectRow select {
+  grid-column: 2 / 4;
+  width: 100%;
+}
+
+.message {
+  margin: 0;
+  color: #7a0000;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.message:empty {
+  display: none;
+}
+
+.diagram {
+  display: block;
+  width: 100%;
+  max-width: 258px;
+  min-height: 166px;
+  margin: 0 auto;
+}
+
+.wire,
+.ground {
+  fill: none;
+  stroke: #111;
+  stroke-linecap: square;
+  stroke-width: 2;
+}
+
+.resistorBox {
+  fill: none;
+  stroke: #111;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.node {
+  fill: #111;
+}
+
+.diagramText {
+  fill: #111;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+.diagramValue {
+  fill: #333;
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+.actions {
+  justify-content: flex-end;
+}
+
+.actions button {
+  min-width: 74px;
+}
+
+@media (max-width: 660px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .diagram {
+    min-height: 166px;
+  }
+}

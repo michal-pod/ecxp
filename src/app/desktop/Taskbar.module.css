@@ -1,0 +1,95 @@
+.taskbar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  height: 34px;
+  align-items: stretch;
+  background: linear-gradient(#2d70d6, #2258c6 42%, #1647a9 43%, #1647a9);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.startButton {
+  display: flex;
+  width: 104px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 0;
+  border-radius: 0 10px 12px 0;
+  color: #fff;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #154016;
+  background: linear-gradient(#71d65d, #2ca333 45%, #198720);
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.7), inset -1px -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.startActive {
+  filter: brightness(0.9);
+}
+
+.startLogo {
+  font-size: 18px;
+  font-style: normal;
+}
+
+.windowButtons {
+  display: flex;
+  flex: 1;
+  gap: 4px;
+  min-width: 0;
+  padding: 4px 8px;
+}
+
+.windowButton {
+  display: flex;
+  max-width: 210px;
+  min-width: 130px;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(14, 47, 126, 0.78);
+  border-radius: 2px;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(#3c88ee, #1f61cf 48%, #174ba6);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.36);
+}
+
+.activeWindow {
+  background: linear-gradient(#1c51b7, #123f9f);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.taskIcon {
+  flex: 0 0 auto;
+  font-size: 12px;
+}
+
+.taskTitle {
+  overflow: hidden;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tray {
+  display: flex;
+  min-width: 104px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  font-size: 11px;
+  background: linear-gradient(#18a8ed, #0b87d4);
+  box-shadow: inset 1px 0 1px rgba(255, 255, 255, 0.55);
+}
+
+.clock {
+  font-variant-numeric: tabular-nums;
+}

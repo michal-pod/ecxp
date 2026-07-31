@@ -1,0 +1,60 @@
+.app {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto auto;
+}
+
+.groups {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, minmax(128px, 1fr));
+}
+
+.bitList {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-height: 137px;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+.bottom {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(170px, 1fr) auto;
+  align-items: end;
+}
+
+.hint {
+  margin: 0;
+  color: #333;
+  font-size: 11px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.actions button {
+  min-width: 74px;
+}
+
+@media (max-width: 720px) {
+  .groups {
+    grid-template-columns: repeat(2, minmax(138px, 1fr));
+  }
+
+  .bottom {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+@media (max-width: 520px) {
+  .groups {
+    grid-template-columns: 1fr;
+  }
+}

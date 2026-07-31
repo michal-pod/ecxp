@@ -1,0 +1,13 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  padding: 12px 10px 10px;
+  background: #ece9d8;
+}
+
+.group legend {
+  padding: 0 4px;
+  background: #ece9d8;
+}

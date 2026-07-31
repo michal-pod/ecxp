@@ -1,0 +1,70 @@
+.app {
+  display: grid;
+  height: 100%;
+  gap: 8px;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.content {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: start;
+}
+
+.logo {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid #0a3b66;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(145deg, #e8f6ff, #2d74ba 45%, #12347d);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.text {
+  min-width: 0;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.text p {
+  margin: 0 0 7px;
+}
+
+.text dl {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+}
+
+.text dl > div {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 6px;
+}
+
+.text dt {
+  font-weight: 700;
+}
+
+.text dd {
+  min-width: 0;
+  margin: 0;
+}
+
+.text a {
+  color: #0000ee;
+}
+
+.actions {
+  justify-content: flex-end;
+}
+
+.actions button {
+  min-width: 74px;
+}

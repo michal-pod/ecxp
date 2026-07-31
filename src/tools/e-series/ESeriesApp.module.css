@@ -1,0 +1,116 @@
+.app {
+  display: grid;
+  height: 100%;
+  gap: 8px;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.content {
+  display: grid;
+  min-height: 0;
+  gap: 8px;
+  grid-template-columns: 128px minmax(0, 1fr);
+}
+
+.filters {
+  display: grid;
+  align-items: start;
+  gap: 8px;
+  align-content: start;
+}
+
+.seriesChecks {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 11px;
+}
+
+.searchRow {
+  min-height: 23px;
+  justify-content: space-between;
+}
+
+.searchRow label {
+  min-width: 0;
+}
+
+.searchRow input {
+  width: 42px;
+  text-align: right;
+}
+
+.tableWrap {
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  box-shadow:
+    inset 1px 1px #7f9db9,
+    inset -1px -1px #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 11px;
+}
+
+.table th,
+.table td {
+  padding: 3px 7px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #ece9d8;
+  font-weight: 400;
+  box-shadow:
+    inset 1px 1px #fff,
+    inset -1px -1px #aca899;
+}
+
+.table th + th,
+.table td + td {
+  border-left: 1px solid #ece9d8;
+}
+
+.table tbody tr:hover {
+  color: #fff;
+  background: #316ac5;
+}
+
+.table td:first-child,
+.table td:last-child {
+  font-family: "Lucida Console", Consolas, monospace;
+}
+
+.actions {
+  justify-content: space-between;
+}
+
+.actions button {
+  min-width: 74px;
+}
+
+.count {
+  color: #333;
+  font-size: 11px;
+}
+
+@media (max-width: 560px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .seriesChecks {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(54px, 1fr));
+  }
+}
